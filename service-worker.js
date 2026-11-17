@@ -1,5 +1,5 @@
-const CACHE_NAME = "e104a-shell-v1";
-const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png"];
+const CACHE_NAME = "e104a-shell-v2";
+const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icons/e104a-icon.svg"];
 self.addEventListener("install", event => {
   event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(SHELL)));
   self.skipWaiting();
